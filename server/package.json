@@ -1,0 +1,30 @@
+{
+  "name": "server-socket-io-chat",
+  "version": "1.0.0",
+  "description": "server-socket-io-chat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "React",
+    "Express",
+    "Node JS",
+    "Socket IO"
+  ],
+  "author": "Rysak Denis",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.1.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}
